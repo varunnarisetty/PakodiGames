@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +31,7 @@ import java.security.SecureRandom;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements EventListener<QuerySnapshot> {
+public class MainActivity extends Activity implements EventListener<QuerySnapshot> {
 
     private static final String TAG = MainActivity.class.getName();
     private FirebaseFirestore db = FirebaseFirestore.getInstance();

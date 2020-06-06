@@ -67,7 +67,9 @@ public class Room {
         if(players == null){
             players = new ArrayList<Player>();
         }
-        players.add(player);
+        if(!players.contains(player)) {
+            players.add(player);
+        }
     }
 
     public void setState(int state){

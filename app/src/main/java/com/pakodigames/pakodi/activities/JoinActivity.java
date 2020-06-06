@@ -1,5 +1,6 @@
 package com.pakodigames.pakodi.activities;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,7 +31,7 @@ import com.pakodigames.pakodi.utils.Util;
 
 import java.util.List;
 
-public class JoinActivity extends AppCompatActivity implements EventListener<QuerySnapshot> {
+public class JoinActivity extends Activity implements EventListener<QuerySnapshot> {
 
     private static final String TAG = JoinActivity.class.getName();
 
